@@ -4,7 +4,7 @@ grep-flag-available() {
 }
 
 # color grep results
-GREP_OPTIONS="--color=auto"
+#GREP_OPTIONS="--color=auto"
 
 # ignore VCS folders (if the necessary grep flags are available)
 VCS_FOLDERS="{.bzr,.cvs,.git,.hg,.svn}"
