@@ -3,8 +3,11 @@ grep-flag-available() {
     echo | grep $1 "" >/dev/null 2>&1
 }
 
-# color grep results
-#GREP_OPTIONS="--color=auto"
+GREP_OPTIONS=""
+
+if grep-flag-available --color=auto; then
+    GREP_OPTIONS+=" --color=auto"
+fi
 
 # ignore VCS folders (if the necessary grep flags are available)
 VCS_FOLDERS="{.bzr,.cvs,.git,.hg,.svn}"
