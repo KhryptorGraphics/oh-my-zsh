@@ -2,7 +2,7 @@
 
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="white"; fi
 
-PROMPT='%F{8}%n@%m%F{blue}%40<...< %~ %<<%F{white}%(!.#.%F{blue}$%F{8}) $(git_prompt_info)'
+PROMPT='%F{8}%n@%m%F{blue}%40<...< %~ %<<%F{white}%(!.#.%F{blue}$%F{8}) $(git_prompt_info)%f'
 RPROMPT="[%D{%m/%d %I:%M %p}]"
 
 # git theming
